@@ -1,21 +1,13 @@
 @import url('https://fonts.googleapis.com/css?family=Lato:300,300i,400,400i,700,900|Montserrat:300,300i,400,400i,500,500i,700,700i|Open+Sans:300,400,400i,700&display=swap');
 :root{
-    /** */
-    --fuenteOpensans:'Open Sans', sans-serif;
+    /* Fuentes */
+    --fuenteMontAlt: 'Montserrat Alternates', sans-serif;;
+    --fuenteMontserrat: 'Montserrat', sans-serif;
     /** Colores */
     --grisClaro:#f2f2f2;
-    --grisobscuro:#c1c1c1;
-    --grisTexto:#17202A;
-    --grisRespuestas:#2C3E50;
-    --naranja:#ef4c44;
-    --botonNaranja:#d91c5c;
-    --verde:#84b34a;
-    --botonMorado:#7d4f9d;
-    --morado:#7d4f9d;
-    --amarilloClaro:#f7ca39;
+    --blanco: #ffffff;
     --amarilloF:#f2991f;
-    --botonMagenta:#e02e70;
-    --rojoma:#A93439;
+    --rojoObscuro: #D01D36;
 }
 body{
     font-family: var(--fuenteMontserrat);
@@ -32,7 +24,7 @@ body{
 }
 #btnAction {
     margin-top:2rem;
-    font-family: var(--fuenteOpensans);
+    font-family: var(--fuenteMontAlt);
     background-color: var(--amarilloF);
     width: 200px;
     color:var(--grisClaro);
@@ -46,10 +38,10 @@ body{
 }
 #btnAction:hover {
     color:var(--grisClaro);
-    background-color: #D01D36;
+    background-color: var(--rojoObscuro);
 }
 .menu   {
-    background-color: #D01D36;
+    background-color: var(--rojoObscuro);
     color: white;
     padding-top: 5px;
     padding-left: 10px;
@@ -68,17 +60,23 @@ body{
     color: white;
 }
 footer{
-    height: 160px;
+    height: 100px;
     width: 100%;
-    position:inherit ;
-    margin-bottom: 0px;
-    font-family: var(--fuenteMontserrat);
+    position: absolute;
     color:var(--blanco);
-    font-size: 1.2rem;
-    font-weight: 300;
-    background-color: #D01D36;
-    margin-top: 10%;
+    font-size: 1rem;
+    font-weight: 200;
+    background-color: var(--rojoObscuro);
+    bottom: 0;
+    margin-top: 20%;
+    text-align: center;
+    padding-top: 2%;
 }
 h2{
     color: #D01D36;
 }
+
+#linkA { text-decoration: none; color: var(--blanco); }
+#linkA:visited { text-decoration: none; }
+#linkA:hover { text-decoration: underline; }
+#linkA:active { text-decoration: underline; }
