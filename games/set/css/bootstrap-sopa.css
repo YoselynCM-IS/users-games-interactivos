@@ -4579,14 +4579,14 @@ input[type="button"].btn-block {
   border-bottom-left-radius: 0.25rem;
 }
 
-.card-body {
+/* .card-body {
   -ms-flex: 1 1 auto;
   flex: 1 1 auto;
   padding: 1.25rem;
   background-color: #A52A2A;
   color: white;
   display: inline-flex;
-}
+} */
 
 .card-title {
   margin-bottom: 0.75rem;
